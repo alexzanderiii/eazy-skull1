@@ -15,11 +15,11 @@ def work(request):
     return render(request,"work.html")
     
             
-def work_single(request):
-    return render(request,"work-single.html")
+def clearance(request):
+    return render(request,"clearance.html")
 
-def pricing(request):
-    return render(request,"pricing.html")    
+def registration(request):
+    return render(request,"registration.html")    
 
 def exam(request):
     return render(request,"exam.html") 
@@ -41,3 +41,18 @@ def howto(request):
 
 def profile(request):
     return render(request,"profile.html")        
+
+def signup(request):
+    return render(request,"signup.html")
+
+def signin(request):
+    return render(request,"signin.html")    
+
+def OT_search(request):
+    return render(request,"OT_search.html")
+
+def account_settings(request):
+    return render(request,"account_settings.html")
+
+def account(request):
+    return render(request,"account.html")                    

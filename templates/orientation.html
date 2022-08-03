@@ -16,13 +16,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/templatemo.css' %}">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
-    <!--
-    
-TemplateMo 561 Purple Buzz
-
-https://templatemo.com/tm-561-purple-buzz
-
--->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" />
 </head>
 
 <body>
@@ -47,10 +41,7 @@ https://templatemo.com/tm-561-purple-buzz
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'about' %}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'work' %}">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'pricing' %}">Pricing</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'work' %}">Eazy Skull</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'contact' %}">Contact</a>
@@ -69,7 +60,23 @@ https://templatemo.com/tm-561-purple-buzz
 
     <!-- Start Work Sigle -->
     <section class="container py-5">
-
+        <div class="s130">
+            <form>
+                <div class="inner-form">
+                    <div class="input-field first-wrap">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  </svg>
+                        </div>
+                        <input id="search" type="text" placeholder="What are you looking for?" />
+                    </div>
+                    <div class="input-field second-wrap">
+                        <button class="btn-search" type="button">SEARCH</button>
+                    </div>
+                </div>
+                <span class="info">ex. Game, Music, Video, Photography</span>
+            </form>
+        </div>
         <div class="row pt-5">
             <div class="worksingle-content col-lg-8 m-auto text-left justify-content-center">
                 <h2 class="worksingle-heading h3 pb-3 light-300 typo-space-line">Digital Marketing Service</h2>
@@ -90,7 +97,7 @@ https://templatemo.com/tm-561-purple-buzz
 
                     <!--Start Controls-->
                     <div class="col-1 align-self-center">
-                        <a href="{% static '#multi-item-example' %}" role="button" data-bs-slide="prev">
+                        <a href="#multi-item-example" role="button" data-bs-slide="prev">
                             <i class='bx bxs-chevron-left bx-sm text-dark'></i>
                         </a>
                     </div>
@@ -195,16 +202,45 @@ https://templatemo.com/tm-561-purple-buzz
                                     </div>
                                 </div>
                             </div>
-                            <!--/.Second slide-->
-
+                            <!--3rd slidde-->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="templatemo-slide-link" href="{% static './assets/img/work-slide-01.jpg'  %}">
+                                            <img class="img-fluid border rounded" src="{% static './assets/img/work-slide-01-small.jpg'  %}" alt="Product Image">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="templatemo-slide-link" href="{% static './assets/img/work-slide-03.jpg'  %}">
+                                            <img class="img-fluid border rounded" src="{% static './assets/img/work-slide-03-small.jpg'  %}" alt="Product Image">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="templatemo-slide-link" href="{% static './assets/img/work-slide-02.jpg' %}">
+                                            <img class="img-fluid border rounded" src="{% static './assets/img/work-slide-02-small.jpg' %}" alt="Product Image">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="templatemo-slide-link" href="{% static './assets/img/work-slide-01.jpg' %}">
+                                            <img class="img-fluid border rounded" src="{% static './assets/img/work-slide-01-small.jpg' %}" alt="Product Image">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="templatemo-slide-link" href="{% static './assets/img/work-slide-06.jpg' %}">
+                                            <img class="img-fluid border rounded" src="{% static './assets/img/work-slide-06-small.jpg' %}" alt="Product Image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!--End Slides-->
+
                     </div>
                     <!--End Carousel Wrapper-->
 
                     <!--Start Controls-->
                     <div class="col-1 align-self-center text-end">
-                        <a href="{% static '#multi-item-example' %}" role="button" data-bs-slide="next">
+                        <a href="#multi-item-example" role="button" data-bs-slide="next">
                             <i class='bx bxs-chevron-right bx-sm text-dark'></i>
                         </a>
                     </div>
@@ -224,44 +260,8 @@ https://templatemo.com/tm-561-purple-buzz
             </div>
         </div>
         <!-- End Paragrph -->
-
-
-        <div class="row">
-            <div class="col-md-8 m-auto text-left justify-content-center">
-                <p class="display-6 py-4 ps-4 border border-5 border-top-0 border-end-0 border-bottom-0 border-start">
-                    <i>
-                          "Vestibulum vestibulum est eu lorem laoreet suscipit. Duis auctor,
-                          metus vel sollicitudin hendrerit, elit neque pulvinar magna, non
-                          sodales orci turpis blandit quam."
-                      </i>
-                </p>
-                <p class="text-muted light-300">
-                    Nam tortor quam, aliquet vel nibh sit amet, faucibus bibendum nisl. Donec vehicula nulla justo, vel sodales massa vestibulum nec. Praesent non orci sed massa fringilla rutrum at et odio. Quisque est orci, elementum sed neque ac, suscipit consectetur leo.
-                    Cras fermentum luctus cursus. Ut porta, augue vel tempus congue, augue purus vulputate ex, lacinia lobortis arcu metus sed lectus.
-                </p>
-            </div>
-        </div>
-        <!-- End Qute -->
-
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8 pt-4 pb-4">
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1z--ZRS5x5U" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <!-- End Video -->
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8 ml-auto mr-auto pt-3 pb-4">
-                <p class="text-muted light-300">
-                    Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-                </p>
-            </div>
-        </div>
     </section>
+
     <!-- End Work Sigle -->
 
     <!-- Start Comment -->
@@ -413,6 +413,39 @@ https://templatemo.com/tm-561-purple-buzz
     <script src="{% static 'assets/js/templatemo.js' %}"></script>
     <!-- Custom -->
     <script src="{% static 'assets/js/custom.js' %}"></script>
+
+</body>
+
+</html>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+<!-- End Footer -->
+
+<!-- Bootstrap -->
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<!-- Load jQuery require for Page Script -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/JJS/extention/choices.js' %}"></script>
+<!-- Page Script -->
+<script>
+    $(window).load(function() {
+        // Slide
+        $('.templatemo-slide-link').click(function() {
+            var this_href = $(this).attr('href');
+            $('#templatemo-slide-link-target img').attr('src', this_href);
+            return false;
+        });
+        // End Slide
+    });
+</script>
+<!-- Templatemo -->
+<script src="{% static 'assets/js/templatemo.js' %}"></script>
+<!-- Custom -->
+<script src="{% static 'assets/js/custom.js' %}"></script>
 
 </body>
 
